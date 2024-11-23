@@ -36,7 +36,7 @@ jobs:
         /Users/runner/work/iBoot64Patcher/iBoot64Patcher/.github/workflows/mac-post.sh
     - name: Versioning
       id: Versioning
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Versioning
         path: |
@@ -44,28 +44,28 @@ jobs:
           /Users/runner/work/iBoot64Patcher/iBoot64Patcher/latest_build_num.txt
     - name: macOS x86_64 RELEASE Archive
       id: macOS-x86_64-RELEASE-Archive
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: iBoot64Patcher-macOS-x86_64-RELEASE
         path: |
           /Users/runner/work/iBoot64Patcher/iBoot64Patcher/iBoot64Patcher-macOS-x86_64-*-RELEASE.tar.xz
     - name: macOS x86_64 DEBUG Archive
       id: macOS-x86_64-DEBUG-Archive
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: iBoot64Patcher-macOS-x86_64-DEBUG
         path: |
           /Users/runner/work/iBoot64Patcher/iBoot64Patcher/iBoot64Patcher-macOS-x86_64-*-DEBUG.tar.xz
     - name: macOS arm64 RELEASE Archive
       id: macOS-arm64-RELEASE-Archive
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: iBoot64Patcher-macOS-arm64-RELEASE
         path: |
           /Users/runner/work/iBoot64Patcher/iBoot64Patcher/iBoot64Patcher-macOS-arm64-*-RELEASE.tar.xz
     - name: macOS arm64 DEBUG Archive
       id: macOS-arm64-DEBUG-Archive
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: iBoot64Patcher-macOS-arm64-DEBUG
         path: |
@@ -102,14 +102,14 @@ jobs:
           mv /home/runner/work/iBoot64Patcher/iBoot64Patcher/.github/workflows/iBoot64Patcher2.tar.xz /home/runner/work/iBoot64Patcher/iBoot64Patcher/.github/workflows/$(cat /home/runner/work/iBoot64Patcher/iBoot64Patcher/.github/workflows/name2.txt)
       - name: iBoot64Patcher Linux x86_64 RELEASE Archive
         id: iBoot64Patcher-Linux-x86_64-RELEASE-Archive
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: iBoot64Patcher-Linux-x86_64-RELEASE
           path: |
             /home/runner/work/iBoot64Patcher/iBoot64Patcher/.github/workflows/iBoot64Patcher-Linux-x86_64*-RELEASE.tar.xz
       - name: iBoot64Patcher Linux x86_64 DEBUG Archive
         id: iBoot64Patcher-Linux-x86_64-DEBUG-Archive
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: iBoot64Patcher-Linux-x86_64-DEBUG
           path: |
